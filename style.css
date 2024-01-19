@@ -1,50 +1,106 @@
+:root {
+  --font-family: "Arial", sans-serif;
+  --background-color: #f4f4f4;
+  --form-background-color: #fff;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --form-width: 80%;
+  --max-form-width: 500px;
+  --margin-auto: 0 auto;
+
+  --heading-text-color: #333;
+  --heading-margin-bottom: 20px;
+
+  --fieldset-border: 1px solid #ccc;
+  --fieldset-border-radius: 8px;
+  --fieldset-padding: 20px;
+  --fieldset-margin-bottom: 20px;
+
+  --legend-font-size: 1em;
+  --legend-font-weight: bold;
+  --legend-margin-bottom: 10px;
+
+  --label-display: block;
+  --label-margin-bottom: 10px;
+
+  --radio-margin-right: 5px;
+
+  --button-background-color: #4caf50;
+  --button-text-color: #fff;
+  --button-padding: 10px 20px;
+  --button-border: none;
+  --button-border-radius: 4px;
+  --button-cursor: pointer;
+  --button-font-size: 1em;
+
+  --button-hover-background-color: #45a049;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
   margin: 0;
   padding: 0;
 }
 
 form {
+  background-color: var(--form-background-color);
+  box-shadow: var(--box-shadow);
+  padding: var(--fieldset-padding);
+  width: var(--form-width);
+  max-width: var(--max-form-width);
+  margin: var(--margin-auto);
+}
+
+h1 {
+  text-align: center;
+  color: var(--heading-text-color);
+  margin-bottom: var(--heading-margin-bottom);
 }
 
 fieldset {
+  border: var(--fieldset-border);
+  border-radius: var(--fieldset-border-radius);
+  padding: var(--fieldset-padding);
+  margin-bottom: var(--fieldset-margin-bottom);
 }
 
 legend {
+  font-size: var(--legend-font-size);
+  font-weight: var(--legend-font-weight);
+  margin-bottom: var(--legend-margin-bottom);
 }
 
-.label {
-  display: block;
-  margin-bottom: 10px;
-  background-color: #f0f0f0;
-  padding: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.options label:hover {
-  background-color: #e0e0e0;
+label {
+  display: var(--label-display);
+  margin-bottom: var(--label-margin-bottom);
 }
 
 input[type="radio"] {
-  margin-right: 5px;
+  margin-right: var(--radio-margin-right);
 }
 
 button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  display: block;
-  margin: 0 auto;
-  transition: background-color 0.3s ease;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  padding: var(--button-padding);
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  cursor: var(--button-cursor);
+  font-size: var(--button-font-size);
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: var(--button-hover-background-color);
+}
+
+@media screen and (min-width: 601px) {
+  form {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  form {
+    width: 60%;
+  }
 }
