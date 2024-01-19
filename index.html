@@ -8,11 +8,119 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="quiz-container">
-      <div id="question-container" class="question"></div>
-      <div id="options-container" class="options"></div>
-      <button onclick="checkAnswer()">Check Answer</button>
-      <div id="result"></div>
-    </div>
+    <form>
+  
+        <fieldset>
+          <legend>Wat is de rol van HTML, CSS en JavaScript in webontwikkeling?</legend>
+          <label><input type="radio">A) HTML voor interactie, CSS voor structuur, JavaScript voor opmaak.</label>
+          <label><input type="radio">B) HTML voor structuur, CSS voor interactie, JavaScript voor opmaak.</label>
+          <label><input type="radio" data-correct-answer>C) HTML voor structuur, CSS voor opmaak, JavaScript voor interactie.</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Leg het boxmodel in CSS uit.</legend>
+          <label><input type="radio">A) Het beschrijft de wijze waarop elementen naast elkaar worden weergegeven.</label>
+          <label><input type="radio" data-correct-answer>B) Het beschrijft hoe elementen op de pagina worden weergegeven met content, padding, border en margin.</label>
+          <label><input type="radio">C) Het beschrijft de structuur van HTML-documenten.</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Wat zijn de verschillen tussen inline- en block-level-elementen in HTML?</legend>
+            <label><input type="radio">A) Inline-elementen beginnen een nieuwe regel, terwijl block-level-elementen naast elkaar worden weergegeven.</label>
+            <label><input type="radio">B) Inline-elementen nemen de volledige breedte in, terwijl block-level-elementen een nieuwe regel beginnen.</label>
+            <label><input type="radio"data-correct-answer>C) Inline-elementen worden naast elkaar weergegeven zonder een nieuwe regel te starten, terwijl block-level-elementen een nieuwe regel beginnen.</label>
+          </fieldset>
+  
+
+          <fieldset>
+            <legend>Hoe werkt specificiteit in CSS en hoe wordt deze berekend?</legend>
+            <label><input type="radio">A) Het wordt willekeurig bepaald op basis van het aantal regels in de stylesheet.</label>
+            <label><input type="radio" data-correct-answer>B) Specificiteit bepaalt welke stijlregel wordt toegepast als er conflicterende regels zijn en wordt berekend op basis van het aantal ID's, klassen en elementselectoren.</label>
+            <label><input type="radio">C) Specificiteit heeft geen invloed op de toepassing van stijlen.</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Beschrijf het doel en gebruik van media queries in responsive design.</legend>
+            <label><input type="radio">A) Media queries worden gebruikt voor het definiëren van variabelen in CSS.</label>
+            <label><input type="radio" data-correct-answer>B) Media queries worden gebruikt om de stijl van een webpagina aan te passen op basis van kenmerken zoals schermgrootte, resolutie en oriëntatie.</label>
+            <label><input type="radio">C) Media queries worden gebruikt om JavaScript-bestanden op basis van het apparaattype te laden.</label>
+          </fieldset>
+ 
+          <fieldset>
+            <legend>Leg het concept van cross-browsercompatibiliteit uit en hoe ga je hiermee om?</legend>
+            <label><input type="radio">A) Cross-browsercompatibiliteit is niet nodig bij moderne webontwikkeling.</label>
+            <label><input type="radio">B) Cross-browsercompatibiliteit verwijst naar de consistentie van de website-ervaring tussen verschillende webbrowsers, en het wordt aangepakt door code alleen voor één specifieke browser te optimaliseren.</label>
+            <label><input type="radio"data-correct-answer>C) Cross-browsercompatibiliteit wordt aangepakt door code te testen op verschillende browsers en indien nodig specifieke oplossingen toe te passen.</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Wat zijn webtoegankelijkheidsnormen en waarom zijn ze belangrijk?</legend>
+            <label><input type="radio">A) Webtoegankelijkheidsnormen zijn slechts optionele richtlijnen.</label>
+            <label><input type="radio" data-correct-answer>B) Webtoegankelijkheidsnormen zijn regels die websites verplichten om gebruiksvriendelijk te zijn voor mensen met verschillende beperkingen, en ze zijn belangrijk omdat ze zorgen voor een inclusieve online ervaring.</label>
+            <label><input type="radio">C) Webtoegankelijkheidsnormen hebben geen invloed op de gebruikerservaring.</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Wat is het verschil tussen var, let en const in JavaScript?.</legend>
+            <label><input type="radio">A) Ze zijn allemaal hetzelfde in JavaScript.</label>
+            <label><input type="radio">B) var wordt block-scoped, let en const zijn function-scoped.</label>
+            <label><input type="radio" data-correct-answer>C) var kan opnieuw worden toegewezen, let en const niet.</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Leg het concept van closures in JavaScript uit.</legend>
+            <label><input type="radio">A) Closures treden op wanneer een functie toegang heeft tot variabelen binnen zijn eigen scope.</label>
+            <label><input type="radio" data-correct-answer>B) Closures ontstaan wanneer een functie toegang heeft tot variabelen buiten zijn eigen scope en deze referenties behoudt, zelfs nadat de buitenste functie is voltooid.</label>
+            <label><input type="radio">C) Closures hebben geen impact op de variabelen buiten hun scope.</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Hoe werkt asynchrone programmering in JavaScript? Bespreek callbacks, promises en async/await.</legend>
+            <label><input type="radio">A) Callbacks worden niet gebruikt in asynchrone programmering.</label>
+            <label><input type="radio">B) Asynchrone programmering maakt geen gebruik van promises en async/await.</label>
+            <label><input type="radio" data-correct-answer>C) Callbacks, promises en async/await zijn allemaal mechanismen om asynchrone code te beheren.</label>
+          </fieldset>
+        
+          <fieldset>
+            <legend>Wat is de Virtual DOM en hoe optimaliseert het de prestaties in front-end frameworks zoals React?</legend>
+            <label><input type="radio">A) De Virtual DOM is een concrete weergave van de DOM in het geheugen.</label>
+            <label><input type="radio">B) De Virtual DOM optimaliseert prestaties door wijzigingen eerst in de werkelijke DOM aan te brengen.</label>
+            <label><input type="radio" data-correct-answer>C) De Virtual DOM is een abstracte weergave van de DOM in het geheugen en optimaliseert prestaties door alleen de benodigde updates naar de werkelijke DOM te sturen.</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Hoe werkt event delegation in JavaScript?.</legend>
+            <label><input type="radio">A) Event delegation betekent dat elke child zijn eigen eventhandler heeft.</label>
+            <label><input type="radio" data-correct-answer>B) Event delegation betekent dat je één eventhandler plaatst op een gemeenschappelijke ouder, wat efficiënter is.</label>
+            <label><input type="radio">C) Event delegation heeft geen invloed op de prestaties van de website.</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Definieer progressieve verbetering in webontwikkeling.</legend>
+            <label><input type="radio">A) Progressieve verbetering is het verwijderen van functies om de website te optimaliseren.</label>
+            <label><input type="radio" data-correct-answer>B) Progressieve verbetering is een benadering waarbij een basisfunctionaliteit wordt geboden aan alle gebruikers, met extra functionaliteit voor gebruikers met moderne browsers of apparaten.</label>
+            <label><input type="radio">C) Progressieve verbetering is alleen relevant voor oudere browsers.</label>
+          </fieldset>
+
+
+          <fieldset>
+            <legend>Leg uit hoe je responsieve afbeeldingen implementeert met het <picture>-element en de srcset-eigenschap.</legend>
+            <label><input type="radio">A) Het <picture>-element wordt niet gebruikt voor responsieve afbeeldingen.</label>
+            <label><input type="radio" data-correct-answer>B) Het <picture>-element wordt gebruikt om verschillende afbeeldingsbronnen aan te bieden op basis van kenmerken zoals schermgrootte. De srcset-eigenschap bevat een lijst met afbeeldingen met hun resoluties.</label>
+            <label><input type="radio">C) De srcset-eigenschap is niet nodig voor responsieve afbeeldingen.</label>
+          </fieldset>
+
+
+          <fieldset>
+            <legend>Bespreek het belang van feature detection in progressieve verbetering. Hoe zou je dit aanpakken in je projecten?</legend>
+            <label><input type="radio">A) Feature detection is niet relevant in progressieve verbetering.</label>
+            <label><input type="radio" data-correct-answer>B) Feature detection is het controleren op de aanwezigheid van bepaalde browserfunctionaliteiten voordat deze worden gebruikt. Dit kan worden gedaan met behulp van moderne JavaScript-methoden zoals typeof of in.</label>
+            <label><input type="radio">C) Feature detection is alleen relevant voor oudere browsers.</label>
+          </fieldset>
+
+
+
+        <button type="submit">Check antwoorden</button>
+      </form>
   </body>
 </html>
