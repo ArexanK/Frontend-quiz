@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Front-end Quiz</h1>
+    <form id="quizForm">
+      <fieldset>
+        <legend>
+          Leg het concept van cross-browsercompatibiliteit uit en hoe ga je
+          hiermee om?
+        </legend>
+        <label
+          ><input type="radio" name="response" value="A" />A)
+          Cross-browsercompatibiliteit is niet nodig bij moderne
+          webontwikkeling.</label
+        >
+        <label
+          ><input type="radio" name="response" value="B" />B)
+          Cross-browsercompatibiliteit verwijst naar de consistentie van de
+          website-ervaring tussen verschillende webbrowsers, en het wordt
+          aangepakt door code alleen voor één specifieke browser te
+          optimaliseren.</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="response"
+            value="C"
+            data-correct-answer
+          />C) Cross-browsercompatibiliteit wordt aangepakt door code te testen
+          op verschillende browsers en indien nodig specifieke oplossingen toe
+          te passen.</label
+        >
+      </fieldset>
+
+      <button type="button" onclick="submitAnswer('vraag7.html')">
+        Volgende vraag
+      </button>
+    </form>
+  </body>
+</html>

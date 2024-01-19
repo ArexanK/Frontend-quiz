@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Front-end Quiz</h1>
+    <form id="quizForm">
+      <fieldset>
+        <legend>
+          Wat zijn de verschillen tussen inline- en block-level-elementen in
+          HTML?
+        </legend>
+        <label
+          ><input type="radio" name="response" value="A" />A) Inline-elementen
+          beginnen een nieuwe regel, terwijl block-level-elementen naast elkaar
+          worden weergegeven.</label
+        >
+        <label
+          ><input type="radio" name="response" value="B" />B) Inline-elementen
+          nemen de volledige breedte in, terwijl block-level-elementen een
+          nieuwe regel beginnen.</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="response"
+            value="C"
+            data-correct-answer
+          />C) Inline-elementen worden naast elkaar weergegeven zonder een
+          nieuwe regel te starten, terwijl block-level-elementen een nieuwe
+          regel beginnen.</label
+        >
+      </fieldset>
+
+      <button type="button" onclick="submitAnswer('vraag4.html')">
+        Volgende vraag
+      </button>
+    </form>
+  </body>
+</html>

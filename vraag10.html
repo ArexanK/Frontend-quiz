@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Front-end Quiz</h1>
+    <form id="quizForm">
+      <fieldset>
+        <legend>
+          Hoe werkt asynchrone programmering in JavaScript? Bespreek callbacks,
+          promises en async/await.
+        </legend>
+        <label
+          ><input type="radio" name="response" value="A" />A) Callbacks worden
+          niet gebruikt in asynchrone programmering.</label
+        >
+        <label
+          ><input type="radio" name="response" value="B" />B) Asynchrone
+          programmering maakt geen gebruik van promises en async/await.</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="response"
+            value="C"
+            data-correct-answer
+          />C) Callbacks, promises en async/await zijn allemaal mechanismen om
+          asynchrone code te beheren.</label
+        >
+      </fieldset>
+
+      <button type="button" onclick="submitAnswer('vraag11.html')">
+        Volgende vraag
+      </button>
+    </form>
+  </body>
+</html>

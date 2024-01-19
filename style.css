@@ -44,21 +44,22 @@ body {
 
 form {
   background-color: var(--form-background-color);
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
   padding: var(--fieldset-padding);
   width: var(--form-width);
   max-width: var(--max-form-width);
   margin: var(--margin-auto);
+  margin-top: 5em;
+  justify-content: center;
 }
 
 h1 {
   text-align: center;
   color: var(--heading-text-color);
-  margin-bottom: var(--heading-margin-bottom);
+  margin-top: 2em;
 }
 
 fieldset {
-  border: var(--fieldset-border);
   border-radius: var(--fieldset-border-radius);
   padding: var(--fieldset-padding);
   margin-bottom: var(--fieldset-margin-bottom);

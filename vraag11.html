@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Front-end Quiz</h1>
+    <form id="quizForm">
+      <fieldset>
+        <legend>
+          Wat is de Virtual DOM en hoe optimaliseert het de prestaties in
+          front-end frameworks zoals React?
+        </legend>
+        <label
+          ><input type="radio" name="response" value="A" />A) De Virtual DOM is
+          een concrete weergave van de DOM in het geheugen.</label
+        >
+        <label
+          ><input type="radio" name="response" value="B" />B) De Virtual DOM
+          optimaliseert prestaties door wijzigingen eerst in de werkelijke DOM
+          aan te brengen.</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="response"
+            value="C"
+            data-correct-answer
+          />C) De Virtual DOM is een abstracte weergave van de DOM in het
+          geheugen en optimaliseert prestaties door alleen de benodigde updates
+          naar de werkelijke DOM te sturen.</label
+        >
+      </fieldset>
+
+      <button type="button" onclick="submitAnswer('vraag12.html')">
+        Volgende vraag
+      </button>
+    </form>
+  </body>
+</html>

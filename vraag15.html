@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Front-end Quiz</h1>
+    <form id="quizForm">
+      <fieldset>
+        <legend>
+          Bespreek het belang van feature detection in progressieve verbetering.
+          Hoe zou je dit aanpakken in je projecten?
+        </legend>
+        <label
+          ><input type="radio" name="response" value="A" />A) Feature detection
+          is niet relevant in progressieve verbetering.</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="response"
+            value="B"
+            data-correct-answer
+          />B) Feature detection is het controleren op de aanwezigheid van
+          bepaalde browserfunctionaliteiten voordat deze worden gebruikt. Dit
+          kan worden gedaan met behulp van moderne JavaScript-methoden zoals
+          typeof of in.</label
+        >
+        <label
+          ><input type="radio" name="response" value="C" />C) Feature detection
+          is alleen relevant voor oudere browsers.</label
+        >
+      </fieldset>
+
+      <button type="button" onclick="submitAnswer('vraag16.html')">
+        Volgende vraag
+      </button>
+    </form>
+  </body>
+</html>

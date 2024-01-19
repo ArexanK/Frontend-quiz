@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Front-end Quiz</h1>
+    <form id="quizForm">
+      <fieldset>
+        <legend>Leg het concept van closures in JavaScript uit.</legend>
+        <label
+          ><input type="radio" name="response" value="A" />A) Closures treden op
+          wanneer een functie toegang heeft tot variabelen binnen zijn eigen
+          scope.</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="response"
+            value="B"
+            data-correct-answer
+          />B) Closures ontstaan wanneer een functie toegang heeft tot
+          variabelen buiten zijn eigen scope en deze referenties behoudt, zelfs
+          nadat de buitenste functie is voltooid.</label
+        >
+        <label
+          ><input type="radio" name="response" value="C" />C) Closures hebben
+          geen impact op de variabelen buiten hun scope.</label
+        >
+      </fieldset>
+
+      <button type="button" onclick="submitAnswer('vraag10.html')">
+        Volgende vraag
+      </button>
+    </form>
+  </body>
+</html>

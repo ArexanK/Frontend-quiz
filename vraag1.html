@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Front-end Quiz</h1>
+
+    <form id="quizForm">
+      <fieldset>
+        <legend>
+          Wat is de rol van HTML, CSS en JavaScript in webontwikkeling?
+        </legend>
+        <label
+          ><input type="radio" name="response" value="A" />A) HTML voor
+          interactie, CSS voor structuur, JavaScript voor opmaak.</label
+        >
+        <label
+          ><input type="radio" name="response" value="B" />B) HTML voor
+          structuur, CSS voor interactie, JavaScript voor opmaak.</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="response"
+            value="C"
+            data-correct-answer
+          />C) HTML voor structuur, CSS voor opmaak, JavaScript voor
+          interactie.</label
+        >
+      </fieldset>
+
+      <button type="button" onclick="submitAnswer('vraag2.html')">
+        Volgende vraag
+      </button>
+    </form>
+  </body>
+</html>

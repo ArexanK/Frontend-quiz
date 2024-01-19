@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Front-end Quiz</h1>
+    <form id="quizForm">
+      <fieldset>
+        <legend>Leg het boxmodel in CSS uit.</legend>
+        <label
+          ><input type="radio" name="response" value="A" />A) Het beschrijft de
+          wijze waarop elementen naast elkaar worden weergegeven.</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="response"
+            value="B"
+            data-correct-answer
+          />B) Het beschrijft hoe elementen op de pagina worden weergegeven met
+          content, padding, border en margin.</label
+        >
+        <label
+          ><input type="radio" name="response" value="C" />C) Het beschrijft de
+          structuur van HTML-documenten.</label
+        >
+      </fieldset>
+      <button type="button" onclick="submitAnswer('vraag3.html')">
+        Volgende vraag
+      </button>
+    </form>
+  </body>
+</html>

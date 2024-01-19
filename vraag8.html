@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Front-end Quiz</h1>
+    <form id="quizForm">
+      <fieldset>
+        <legend>
+          Wat is het verschil tussen var, let en const in JavaScript?.
+        </legend>
+        <label
+          ><input type="radio" name="response" value="A" />A) Ze zijn allemaal
+          hetzelfde in JavaScript.</label
+        >
+        <label
+          ><input type="radio" name="response" value="B" />B) var wordt
+          block-scoped, let en const zijn function-scoped.</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="response"
+            value="C"
+            data-correct-answer
+          />C) var kan opnieuw worden toegewezen, let en const niet.</label
+        >
+      </fieldset>
+
+      <button type="button" onclick="submitAnswer('vraag9.html')">
+        Volgende vraag
+      </button>
+    </form>
+  </body>
+</html>
