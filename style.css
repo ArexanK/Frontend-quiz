@@ -95,9 +95,25 @@ button:hover {
   background-color: var(--button-hover-background-color);
 }
 
-@media screen and (min-width: 601px) {
+#resultsMessage {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#resultsMessage p {
+  margin: 0;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 601px) {
   form {
     width: 70%;
+  }
+  legend {
+    max-width: 30em;
   }
 }
 
