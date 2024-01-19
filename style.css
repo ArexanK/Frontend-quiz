@@ -57,6 +57,7 @@ h1 {
   text-align: center;
   color: var(--heading-text-color);
   margin-top: 2em;
+  margin-right: 1em;
 }
 
 fieldset {
